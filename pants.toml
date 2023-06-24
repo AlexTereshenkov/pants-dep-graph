@@ -23,7 +23,7 @@ dg = "dep-graph"
 build = "fmt lint check test package ::"
 
 [python]
-interpreter_constraints = ['>=3.9.*']
+interpreter_constraints = ['>=3.9']
 
 [mypy]
 config = "mypy.ini"

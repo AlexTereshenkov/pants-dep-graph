@@ -4,7 +4,7 @@ python_distribution(
     name="dist",
     provides=python_artifact(
         name="pants-dep-graph",
-        version="1.0.0",
+        version="1.0.1",
         description="Pants plugin to export repository dependency graph.",
         long_description_content_type="text/markdown",
     ),
