@@ -1,0 +1,29 @@
+[GLOBAL]
+pants_version = "2.16.0"
+pythonpath = ["%(buildroot)s/src"]
+
+backend_packages = [
+    "pants.backend.experimental.python",
+    "pants.backend.python",
+    "pants.backend.python.lint.autoflake",
+    "pants.backend.python.lint.black",
+    "pants.backend.python.lint.docformatter",
+    "pants.backend.python.lint.flake8",
+    "pants.backend.python.lint.isort",
+    "pants.backend.python.typecheck.mypy",
+    "pants.backend.plugin_development",
+    "depgraph"
+]
+
+[anonymous-telemetry]
+enabled = false
+
+[cli.alias]
+dg = "dep-graph"
+build = "fmt lint check test package ::"
+
+[python]
+interpreter_constraints = ['>=3.9.*']
+
+[mypy]
+config = "mypy.ini"
