@@ -3,8 +3,8 @@ pants_requirements(name="pants")
 python_distribution(
     name="dist",
     provides=python_artifact(
-        name="pants-dep-graph",
-        version="1.0.1",
+        name="pants-plugin-dep-graph",
+        version="1.0.2",
         description="Pants plugin to export repository dependency graph.",
         long_description_content_type="text/markdown",
     ),
