@@ -33,3 +33,18 @@ pants dep-graph --deps --sources-only src::
 pants --print-stacktrace --no-local-cache --no-pantsd dep-graph --deps src::
 pants --print-stacktrace --no-local-cache --no-pantsd dep-graph --rdeps src::
 ```
+
+## Analytics
+
+### Install
+
+```
+$ pip install dep-graph-analytics
+```
+
+### Usage
+
+```
+$ dep-graph-analytics cycles tests/cycles.json
+['src/moduleC.py', 'src/moduleA.py', 'src/moduleB.py']
+```

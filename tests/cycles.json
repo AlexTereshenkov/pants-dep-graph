@@ -1,0 +1,14 @@
+{
+    "src/moduleA.py": [
+        "src/moduleB.py"
+    ],
+    "src/moduleB.py": [
+        "src/moduleC.py"
+    ],
+    "src/moduleC.py": [
+        "src/moduleA.py"
+    ],
+    "src/moduleD.py": [
+        "src/modulA.py"
+    ]
+}
